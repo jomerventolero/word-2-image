@@ -56,7 +56,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('https://dalle-arbb.onrender.com/api/v1/post', {
+        const response = await fetch('https://word-2-image.onrender.com/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ const CreatePost = () => {
   return (
     <section className="max-w-7xl mx-auto">
       <div>
-        <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
+        <h1 className="font-extrabold text-red-500 text-[32px]">Create</h1>
         <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">Generate an imaginative image through DALL-E AI and share it with the community</p>
       </div>
 
